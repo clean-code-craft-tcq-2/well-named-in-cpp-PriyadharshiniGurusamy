@@ -1,6 +1,6 @@
 #include <iostream>
-#include <ColorCodeDefines.h>
-#include <ColorCodeInterface.h>
+#include "ColorCodeDefines.h"
+#include "ColorCodeInterface.h"
 #include <assert.h>
 
 void testNumberToPair(int pairNumber,
