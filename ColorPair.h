@@ -1,5 +1,5 @@
 #include <iostream>
-#include <ColorCodeDefines.h>
+#include "ColorCodeDefines.h"
 
 namespace TelCoColorCoder
 {
