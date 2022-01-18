@@ -1,5 +1,4 @@
 #include <iostream>
-#include "ColorCodeDefines.h"
 #include "ColorCodeInterface.h"
 #include <assert.h>
 
