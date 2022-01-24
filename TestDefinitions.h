@@ -41,5 +41,5 @@ void testPrintColorPairManual()
     printCounter = 0;
     getColorPairCounter = 0;  
     TelCoColorCoder::PrintManual(mockGetColorPair, mockPrint);
-    assert(printCounter == 23);
+    assert(printCounter == 24);
 }
