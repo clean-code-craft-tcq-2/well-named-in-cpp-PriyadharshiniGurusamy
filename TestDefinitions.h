@@ -33,7 +33,7 @@ void mockPrint(int /*PairNumber*/, std::string /*ColorPair*/)
 TelCoColorCoder::ColorPair mockGetColorPair(int PairNumber)
 {
     getColorPairCounter++;
-    return TelCoColorCoder::GetColorFromPairNumber(pairNumber);
+    return TelCoColorCoder::GetColorFromPairNumber(PairNumber);
 }
 
 void testPrintColorPairManual()
