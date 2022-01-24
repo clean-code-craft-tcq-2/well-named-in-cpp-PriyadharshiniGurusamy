@@ -19,8 +19,8 @@ namespace TelCoColorCoder
     void PrintManual(ColorPair(*GetColorforPair)(int PairNumber) , void(*PrintColorPair)(int PairNumber, std::string ColorPair))
     {
         std::cout<<"PairNumber  -  ColorPair"<<std::endl;
-        int i = 0;
-        while(i<24)
+        int i = 1;
+        while(i<=24)
         {
             std::string colorPair = GetColorforPair(i).ToString();
             if(!colorPair.empty())
