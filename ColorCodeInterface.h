@@ -15,14 +15,28 @@ namespace TelCoColorCoder
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) 
     {
         return major * numberOfMinorColors + minor + 1;
-    }    
-    void ReadManual()
+    }
+    void PrintManual(std::string(*GetColorforPair)(int PairNumber) , void(*PrintColorPair)(int PairNumber, std::string ColorPair))
     {
-       std::cout<<"PairNumber  -  ColorPair"<<std::endl;
-       for(int PairNumber =1; PairNumber<=25;PairNumber++)
-       {
-          TelCoColorCoder::ColorPair colorPair = TelCoColorCoder::GetColorFromPairNumber(PairNumber);
-          std::cout<<PairNumber<<"     -    "<<colorPair.ToString()<<std::endl;
-       }
+        std::cout<<"PairNumber  -  ColorPair"<<std::endl;
+        int i = 0;
+        while(i<24)
+        {
+            std::string colorPair = GetColorforPair(i);
+            if(colorPair != NULL)
+            {
+               PrintColorPair( i, colorPair);
+               i++;
+            }
+            else
+            {
+                std::cout<<"Error in Pair"<< i <<std::endl;
+                break;
+            }
+        }
+    }
+    void PrintColorPair(int PairNumber, std::string ColorPair)
+    {  
+       std::cout<<PairNumber<<"     -    "<<colorPair.ToString()<<std::endl;
     }
 }
